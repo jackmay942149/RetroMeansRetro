@@ -19,7 +19,7 @@ TagManager:
   - Flower
   - Bubble
   - Banner
-  - 
+  - Balloon
   - 
   - 
   - 
@@ -42,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Balloons
+    uniqueID: 1046641163
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
