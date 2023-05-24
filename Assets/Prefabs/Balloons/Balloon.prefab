@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2856678794366316881}
   - component: {fileID: 2856678794366316882}
   - component: {fileID: 2856678794366316880}
+  - component: {fileID: 8034652294849647108}
   m_Layer: 10
   m_Name: Balloon
   m_TagString: Untagged
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1046641163
-  m_SortingLayer: 1
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,3 +104,24 @@ MonoBehaviour:
   xSpeedMax: 0.5
   lifetime: 20
   changeDirTime: 0.5
+--- !u!114 &8034652294849647108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2856678794366316883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c1067f668bf504db13a545f789d94e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 528f87e3d4031054ab6a737017233191, type: 3}
+  - {fileID: 21300000, guid: 1292b3bdd8440174480da0502413df67, type: 3}
+  - {fileID: 21300000, guid: 2786be91bbe293844b367be1c9d8d6d5, type: 3}
+  - {fileID: 21300000, guid: ae7f05fc88733604bb281928ce14923a, type: 3}
+  - {fileID: 21300000, guid: 1191ee739ed063c499327ef4312c6d25, type: 3}
+  - {fileID: 21300000, guid: 4faaa3a0244cd8c4694e60eeb2db9d07, type: 3}
+  - {fileID: 21300000, guid: 1012832227ea05546858e4a2bd733c59, type: 3}
+  - {fileID: 21300000, guid: 28cc53bc23ea6b548bf8b6bccd807cc3, type: 3}
