@@ -20,7 +20,7 @@ TagManager:
   - Bubble
   - Banner
   - Balloon
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Banner
+    uniqueID: 3098992795
     locked: 0
