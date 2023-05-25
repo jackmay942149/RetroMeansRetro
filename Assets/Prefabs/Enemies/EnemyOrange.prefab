@@ -161,3 +161,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  scoreManagerObject: {fileID: 7162572806431389260, guid: 486a4c3dfe56ad04294b0230224a2950, type: 3}
+  score: 30

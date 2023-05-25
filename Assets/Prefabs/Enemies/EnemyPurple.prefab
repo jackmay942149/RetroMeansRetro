@@ -162,6 +162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: -1
+  scoreManagerObject: {fileID: 7162572806431389260, guid: 486a4c3dfe56ad04294b0230224a2950, type: 3}
+  score: 0
 --- !u!114 &2774042443811365548
 MonoBehaviour:
   m_ObjectHideFlags: 0

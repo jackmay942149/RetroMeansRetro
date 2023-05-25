@@ -162,6 +162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: -1
+  scoreManagerObject: {fileID: 7162572806431389260, guid: 486a4c3dfe56ad04294b0230224a2950, type: 3}
+  score: 40
 --- !u!114 &1610726680787841366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,3 +176,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f667b6b10febbdf4c91b2ee7639562a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreManagerObject: {fileID: 7162572806431389260, guid: 486a4c3dfe56ad04294b0230224a2950, type: 3}
+  score: 40
