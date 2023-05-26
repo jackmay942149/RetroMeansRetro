@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndlessSpawner : MonoBehaviour
+public class MayhemSpawner : MonoBehaviour
 {
     // Create a array to hold the enemy prefabs
     [SerializeField] private EnemyWeighted[] enemies;
@@ -13,7 +13,7 @@ public class EndlessSpawner : MonoBehaviour
     [SerializeField] private float incWeightFreq;
 
     // Create a array to hold the y values for the spawn positions
-    private List<float> ySpawnPositions = new List<float>() {-0.565f,  -0.442f, -0.319f, -0.196f, -0.073f, 0.073f, 0.196f, 0.319f, 0.442f, 0.565f};
+    [SerializeField] private List<float> ySpawnPositions = new List<float>() {-0.565f,  -0.442f, -0.319f, -0.196f, -0.073f, 0.073f, 0.196f, 0.319f, 0.442f, 0.565f};
 
     private void Start()
     {

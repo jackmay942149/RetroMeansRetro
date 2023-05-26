@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class KillPlayer : MonoBehaviour
+public class KillPlayerNormal : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("EndlessGameOver");
+            SceneManager.LoadScene("NormalGameOver");
         }
     }
 }

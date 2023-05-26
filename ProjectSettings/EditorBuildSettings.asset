@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 4af36b135cbe4214fa5b4f3ff071ad15
   - enabled: 1
-    path: Assets/Scenes/Endless.unity
+    path: Assets/Scenes/Normal.unity
+    guid: d915c2684a8996a4fbeea363d9d33e69
+  - enabled: 1
+    path: Assets/Scenes/NormalGameOver.unity
+    guid: 24cf9ea4f2290084492b3cc19886b762
+  - enabled: 1
+    path: Assets/Scenes/Mayhem.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/EndlessGameOver.unity
+    path: Assets/Scenes/MayhemGameOver.unity
     guid: 0aaea2e78be2f1440a23de31e1bbdb3c
   m_configObjects: {}

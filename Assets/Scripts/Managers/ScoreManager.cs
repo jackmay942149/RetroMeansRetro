@@ -11,6 +11,9 @@ public class ScoreManager : MonoBehaviour
     // Create a reference to the text component
     [SerializeField] private TextMeshProUGUI text;
 
+    // Create a string for the name of the high score affected in the gamemode
+    [SerializeField] private string scoreMode;
+
     private void Start()
     {
         score = 0;
@@ -29,17 +32,17 @@ public class ScoreManager : MonoBehaviour
 
     public void SaveHighScore()
     {
-        if (PlayerPrefs.HasKey("EndlessHighScore"))
+        if (PlayerPrefs.HasKey(scoreMode))
         {
-            if (score > PlayerPrefs.GetInt("EndlessHighScore"))
+            if (score > PlayerPrefs.GetInt(scoreMode))
             {
-                PlayerPrefs.SetInt("EndlessHighScore", score);
+                PlayerPrefs.SetInt(scoreMode, score);
                 PlayerPrefs.Save();
             }
         }
         else
         {   
-            PlayerPrefs.SetInt("EndlessHighScore", score);
+            PlayerPrefs.SetInt(scoreMode, score);
             PlayerPrefs.Save();
         }
     }
@@ -51,6 +54,6 @@ public class ScoreManager : MonoBehaviour
 
     public int GetHighScore()
     {
-        return PlayerPrefs.GetInt("EndlessHighScore");
+        return PlayerPrefs.GetInt(scoreMode);
     }
 }
