@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 2774042443811365559}
   - component: {fileID: 2774042443811365558}
   - component: {fileID: 2774042443811365548}
+  - component: {fileID: 4186530609323491329}
+  - component: {fileID: -7352245519535771399}
   m_Layer: 0
   m_Name: EnemyPurple
   m_TagString: Untagged
@@ -149,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  lifetime: 10
 --- !u!114 &2774042443811365558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +165,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: -1
-  scoreManagerObject: {fileID: 7162572806431389260, guid: 486a4c3dfe56ad04294b0230224a2950, type: 3}
   score: 0
 --- !u!114 &2774042443811365548
 MonoBehaviour:
@@ -177,3 +179,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedMulti: 1.2
+--- !u!114 &4186530609323491329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774042443811365557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041ef4bfd0e18be469708156f81c70e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7352245519535771399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2774042443811365557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32102fbc878a4c47bb93ed3740ee068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

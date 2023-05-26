@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 1610726680787841361}
   - component: {fileID: 1610726680787841360}
   - component: {fileID: 1610726680787841366}
+  - component: {fileID: -108011029446650271}
+  - component: {fileID: 2729339049581053938}
   m_Layer: 0
   m_Name: EnemyYellow
   m_TagString: Untagged
@@ -149,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  lifetime: 10
 --- !u!114 &1610726680787841360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +165,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: -1
-  scoreManagerObject: {fileID: 7162572806431389260, guid: 486a4c3dfe56ad04294b0230224a2950, type: 3}
   score: 40
 --- !u!114 &1610726680787841366
 MonoBehaviour:
@@ -176,5 +178,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f667b6b10febbdf4c91b2ee7639562a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreManagerObject: {fileID: 7162572806431389260, guid: 486a4c3dfe56ad04294b0230224a2950, type: 3}
   score: 40
+--- !u!114 &-108011029446650271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610726680787841327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041ef4bfd0e18be469708156f81c70e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2729339049581053938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610726680787841327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32102fbc878a4c47bb93ed3740ee068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

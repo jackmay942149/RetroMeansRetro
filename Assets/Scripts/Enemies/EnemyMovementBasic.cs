@@ -13,6 +13,9 @@ public class EnemyMovementBasic : MonoBehaviour
     // Create a variable to see if enemy has been collided with
     private bool touchedPlayer;
 
+    // Create a variable for enemy lifetime
+    [SerializeField] private float lifetime;
+
     public float Speed
     {
         get { return speed; } 
@@ -23,6 +26,7 @@ public class EnemyMovementBasic : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         touchedPlayer = false;
+        Destroy(this.gameObject, lifetime);
     }
 
     private void FixedUpdate()

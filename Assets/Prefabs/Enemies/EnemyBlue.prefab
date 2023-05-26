@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 1149938270867908540}
   - component: {fileID: 1149938270867908541}
   - component: {fileID: 1149938270867908542}
+  - component: {fileID: -7446358172163786207}
+  - component: {fileID: -8929255602834697632}
   m_Layer: 0
   m_Name: EnemyBlue
   m_TagString: Untagged
@@ -148,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  lifetime: 10
 --- !u!114 &1149938270867908542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,5 +164,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  scoreManagerObject: {fileID: 7162572806431389260, guid: 486a4c3dfe56ad04294b0230224a2950, type: 3}
   score: 20
+--- !u!114 &-7446358172163786207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149938270867908543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041ef4bfd0e18be469708156f81c70e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-8929255602834697632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149938270867908543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32102fbc878a4c47bb93ed3740ee068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

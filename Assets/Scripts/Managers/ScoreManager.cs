@@ -24,4 +24,21 @@ public class ScoreManager : MonoBehaviour
     {
         this.score += scoreToAdd;
     }
+
+    private void SaveHighScore()
+    {
+        if (PlayerPrefs.HasKey("EndlessHighScore"))
+        {
+            if (score > PlayerPrefs.GetInt("EndlessHighScore"))
+            {
+                PlayerPrefs.SetInt("EndlessHighScore", score);
+                PlayerPrefs.Save();
+            }
+        }
+        else
+        {   
+            PlayerPrefs.SetInt("EndlessHighScore", score);
+            PlayerPrefs.Save();
+        }
+    }
 }

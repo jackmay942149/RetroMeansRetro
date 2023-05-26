@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2856678794366316880}
   - component: {fileID: 8034652294849647108}
   m_Layer: 10
-  m_Name: Balloon
+  m_Name: BalloonReverse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100,8 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ySpeedMin: 0.1
   ySpeedMax: 0.2
-  xSpeedMin: 0.1
-  xSpeedMax: 0.5
+  xSpeedMin: -0.5
+  xSpeedMax: -0.1
   lifetime: 20
   changeDirTime: 0.5
 --- !u!114 &8034652294849647108
