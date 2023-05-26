@@ -16,4 +16,9 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Endless");
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

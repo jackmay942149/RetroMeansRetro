@@ -14,7 +14,9 @@ public class ScoreManager : MonoBehaviour
     private void Start()
     {
         score = 0;
+        DontDestroyOnLoad(this.gameObject);
     }
+
     private void Update()
     {
         text.text = "Score: " + score.ToString();
@@ -25,7 +27,7 @@ public class ScoreManager : MonoBehaviour
         this.score += scoreToAdd;
     }
 
-    private void SaveHighScore()
+    public void SaveHighScore()
     {
         if (PlayerPrefs.HasKey("EndlessHighScore"))
         {
@@ -40,5 +42,15 @@ public class ScoreManager : MonoBehaviour
             PlayerPrefs.SetInt("EndlessHighScore", score);
             PlayerPrefs.Save();
         }
+    }
+
+    public int GetScore()
+    {
+        return score;
+    }
+
+    public int GetHighScore()
+    {
+        return PlayerPrefs.GetInt("EndlessHighScore");
     }
 }
