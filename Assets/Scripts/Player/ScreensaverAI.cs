@@ -25,6 +25,9 @@ public class ScreensaverAI : MonoBehaviour
     [SerializeField] private GameObject bubble;
     [SerializeField] private float fireRate;
 
+    // Create a variable to hold if user is playing
+    [SerializeField] private bool isPlaying;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,22 +41,27 @@ public class ScreensaverAI : MonoBehaviour
     {
         if(Input.anyKey)
         {
+            isPlaying = true;
             time = 0;
             UserMove();
             CancelInvoke("AIShoot");
         }
-        else 
+        else if (time < frameIdleMax)
         {
             time++;
-            
+            if (isPlaying)
+            {
+                UserMove();
+            }
         }
 
         if (time >= frameIdleMax)
         {
+            isPlaying = false;
+            time = 0;
             AIMove();
             CancelInvoke("AIShoot");
-            time = 0;
-            InvokeRepeating("AIShoot", 0.0f, fireRate);
+            InvokeRepeating("AIShoot", 0.0f, Random.value/2.0f + 0.1f);
         }
 
         // Set the velocity of the player
