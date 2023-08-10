@@ -20,6 +20,10 @@ public class SceneLoader : MonoBehaviour
         {
             StartMayhem();
         }
+        else if (mode == "Mode: Screensaver")
+        {
+            StartScreenSaver();
+        }
     }
 
     // Function to quit game
@@ -37,6 +41,11 @@ public class SceneLoader : MonoBehaviour
     public void StartNormal()
     {
         SceneManager.LoadScene("Normal");
+    }
+
+    public void StartScreenSaver()
+    {
+        SceneManager.LoadScene("ScreenSaver");
     }
 
     public void MainMenu()
