@@ -42,9 +42,10 @@ public class ScreensaverAI : MonoBehaviour
             UserMove();
             CancelInvoke("AIShoot");
         }
-        else
+        else 
         {
             time++;
+            
         }
 
         if (time >= frameIdleMax)

@@ -20,4 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MayhemGameOver.unity
     guid: 0aaea2e78be2f1440a23de31e1bbdb3c
+  - enabled: 1
+    path: Assets/Scenes/ScreenSaver.unity
+    guid: 48decf1c51500524ca238c2db3e3604e
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
