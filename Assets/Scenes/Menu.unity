@@ -1016,8 +1016,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quit Game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1541ea024c4d34548a071fd54faa6a49, type: 2}
-  m_sharedMaterial: {fileID: -5399639626843762053, guid: 1541ea024c4d34548a071fd54faa6a49, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8aee73f6f624dd346ae55aacea7f45b8, type: 2}
+  m_sharedMaterial: {fileID: -7671513994219596262, guid: 8aee73f6f624dd346ae55aacea7f45b8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1199,8 +1199,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Insert Coin(s)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1541ea024c4d34548a071fd54faa6a49, type: 2}
-  m_sharedMaterial: {fileID: -5399639626843762053, guid: 1541ea024c4d34548a071fd54faa6a49, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8aee73f6f624dd346ae55aacea7f45b8, type: 2}
+  m_sharedMaterial: {fileID: -7671513994219596262, guid: 8aee73f6f624dd346ae55aacea7f45b8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2005,8 +2005,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Mode: Normal'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1541ea024c4d34548a071fd54faa6a49, type: 2}
-  m_sharedMaterial: {fileID: -5399639626843762053, guid: 1541ea024c4d34548a071fd54faa6a49, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8aee73f6f624dd346ae55aacea7f45b8, type: 2}
+  m_sharedMaterial: {fileID: -7671513994219596262, guid: 8aee73f6f624dd346ae55aacea7f45b8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
