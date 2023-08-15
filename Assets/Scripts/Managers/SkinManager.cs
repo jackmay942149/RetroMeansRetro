@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SkinManager : MonoBehaviour
 {
@@ -30,6 +31,8 @@ public class SkinManager : MonoBehaviour
         }
 
         sr.sprite = sprites[currSkin];
+
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     // Function to switch to previous skin
@@ -43,6 +46,8 @@ public class SkinManager : MonoBehaviour
         }
 
         sr.sprite = sprites[currSkin];
+
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
 

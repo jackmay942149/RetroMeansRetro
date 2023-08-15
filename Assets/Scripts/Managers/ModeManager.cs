@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class ModeManager : MonoBehaviour
@@ -29,6 +30,8 @@ public class ModeManager : MonoBehaviour
         }
 
         modeSelector.text = modes[currMode];
+
+        EventSystem.current.SetSelectedGameObject(null);
     }
     // Function to change to the next mode
     public void NextMode()
@@ -41,6 +44,8 @@ public class ModeManager : MonoBehaviour
         }
 
         modeSelector.text = modes[currMode];
+
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public string ReturnMode()
