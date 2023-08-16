@@ -22,7 +22,6 @@ public class ApplySkin : MonoBehaviour
             player = GameObject.Find("Player");
             sr = player.GetComponent<SpriteRenderer>();
             sr.sprite = this.gameObject.GetComponent<SkinManager>().ReturnSkin();
-            Destroy(this.gameObject);
         }
     }
 }

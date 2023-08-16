@@ -1393,7 +1393,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 82b254bf76a52ce4abf25d8ad994ac3e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 567e0bdf230478243b0d15e0ef8a577e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1503,7 +1503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1521971344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1567,7 +1567,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1606670495}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SkinManager, Assembly-CSharp
         m_MethodName: NextSkin
         m_Mode: 1
@@ -1617,69 +1617,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521971343}
   m_CullTransparentMesh: 1
---- !u!1 &1606670493
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1606670494}
-  - component: {fileID: 1606670495}
-  - component: {fileID: 1606670496}
-  m_Layer: 0
-  m_Name: SkinManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1606670494
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606670493}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1606670495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606670493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c90841737e873047a7618fc8705cfab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skinSelector: {fileID: 1302341481}
-  sprites:
-  - {fileID: 21300000, guid: 82b254bf76a52ce4abf25d8ad994ac3e, type: 3}
-  - {fileID: 21300000, guid: 6f21ef84e2f8b6747ad73ad272a136a2, type: 3}
-  - {fileID: 21300000, guid: 548c32b8fdf14504aa8115e02f8614c9, type: 3}
-  - {fileID: 21300000, guid: 567e0bdf230478243b0d15e0ef8a577e, type: 3}
---- !u!114 &1606670496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606670493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10d34fbb23aac5b41ae3cd3acd10cb62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1756050579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,7 +1635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1756050580
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1762,7 +1699,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1606670495}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SkinManager, Assembly-CSharp
         m_MethodName: PrevSkin
         m_Mode: 1
@@ -2307,6 +2244,5 @@ SceneRoots:
   - {fileID: 2063308965}
   - {fileID: 580224736}
   - {fileID: 673060814}
-  - {fileID: 1606670494}
   - {fileID: 972466739}
   - {fileID: 2083310748}

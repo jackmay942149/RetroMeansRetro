@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class SkinManager : MonoBehaviour
 {
@@ -13,11 +14,26 @@ public class SkinManager : MonoBehaviour
     [SerializeField] private List<Sprite> sprites;
     private int currSkin;
 
+    private GameObject player;
+    private SpriteRenderer playerSr;
+
     private void Start()
     {
+        DontDestroyOnLoad(this);
         sr = skinSelector.GetComponent<SpriteRenderer>();
         currSkin = 0;
         sr.sprite = sprites[currSkin];
+    }
+
+    void Awake()
+    {
+        Debug.Log("Worked!");
+        if (SceneManager.GetActiveScene().name != "Menu")
+        {
+            player = GameObject.Find("Player");
+            playerSr = player.GetComponent<SpriteRenderer>();
+            playerSr.sprite = ReturnSkin();
+        }
     }
 
     // Function to switch to next skin
