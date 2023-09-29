@@ -13,6 +13,9 @@ public class ModeManager : MonoBehaviour
     [SerializeField] private List<string> modes;
     private int currMode;
 
+    // Reference the audio source for UI clicking
+    [SerializeField] private AudioSource uiClickSound;
+
     private void Start()
     {
         currMode = 0;
@@ -29,6 +32,8 @@ public class ModeManager : MonoBehaviour
             currMode = modes.Count - 1;
         }
 
+        uiClickSound.Play();
+
         modeSelector.text = modes[currMode];
 
         EventSystem.current.SetSelectedGameObject(null);
@@ -44,6 +49,8 @@ public class ModeManager : MonoBehaviour
         }
 
         modeSelector.text = modes[currMode];
+
+        uiClickSound.Play();
 
         EventSystem.current.SetSelectedGameObject(null);
     }
