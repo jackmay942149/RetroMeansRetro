@@ -12,11 +12,10 @@ public class SceneLoader : MonoBehaviour
 
     // Reference the sound for starting the game
     [SerializeField] private AudioSource startGameSound;
+    [SerializeField] private AudioSource mainMenuSound;
 
     public void InsertCoins()
     {
-        DontDestroyOnLoad(this);
-        startGameSound.Play();
 
         mode = modeManager.GetComponent<ModeManager>().ReturnMode();
         if (mode == "Mode: Normal")
@@ -42,24 +41,32 @@ public class SceneLoader : MonoBehaviour
     // Function to start game
     public void StartMayhem()
     {
+        DontDestroyOnLoad(this);
+        startGameSound.Play();
         SceneManager.LoadScene("Mayhem");
         Destroy(this, 1.0f);
     }
 
     public void StartNormal()
     {
+        DontDestroyOnLoad(this);
+        startGameSound.Play();
         SceneManager.LoadScene("Normal");
         Destroy(this, 1.0f);
     }
 
     public void StartScreenSaver()
     {
+        DontDestroyOnLoad(this);
+        startGameSound.Play();
         SceneManager.LoadScene("ScreenSaver");
         Destroy(this, 1.0f);
     }
 
     public void MainMenu()
     {
+        DontDestroyOnLoad(this);
+        mainMenuSound.Play();
         SceneManager.LoadScene("Menu"); 
         Destroy(this, 1.0f);
     }
